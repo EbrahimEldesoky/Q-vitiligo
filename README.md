@@ -273,14 +273,14 @@ Individual score terms are defined as:
    $$S_{\text{rep}} = \sum_{k} \left[ E_{k, \text{MC1R}}(c_k) + E_{k, \text{TYR}}(c_k) \right]$$
 
 3. **Cellular Defense Score**:
-   $$S_{\text{def}} = \sum_{k} E_{k, \text{Nrf2\_KEAP1}}(c_k)$$
+   $$S_{\text{def}} = \sum_{k} E_{k, \text{Nrf2/KEAP1}}(c_k)$$
 
 4. **Bioavailability and Bioenhancement Score**:
    $$S_{\text{adm}} = \left( \sum_{k} \text{Bio}_k \cdot \frac{c_k^\gamma}{\text{EC}_{50, k}^\gamma + c_k^\gamma} \cdot 0.20 \right) \cdot \lambda_{\text{piperine}}$$
    $$\lambda_{\text{piperine}} = \begin{cases} \min\left(1.30, 1.0 + \frac{c_{\text{piperine}}}{100.0}\right), & c_{\text{piperine}} > 5.0\,\mu\text{M} \\ 1.00, & \text{otherwise} \end{cases}$$
 
 5. **Multi-Target Coverage Synergy**:
-   $$S_{\text{syn}} = \frac{|\bigcup_{k, c_k > 0} \text{Targets}_k|}{N_{\text{total\_targets}}}$$
+   $$S_{\text{syn}} = \frac{|\bigcup_{k, c_k > 0} \text{Targets}_k|}{N_{\text{total}}}$$
 
 6. **Toxicity Penalty Barrier**:
    $$\Omega_{\text{tox}}(\vec{C}) = \sum_{k} 0.20 \cdot \left(\frac{c_k - 1.5 \cdot c_k^{\max}}{c_k^{\max}}\right) \cdot \mathbb{I}(c_k > 1.5 \cdot c_k^{\max})$$
