@@ -511,7 +511,6 @@ Q-vitiligo/
 ├── data/
 │   ├── natural_compounds.json          # Botanical library with SMILES & target annotations
 │   └── targets.json                    # Vitiligo biological receptors and active-site files
-├── quantum_vitiligo -> qvitiligo       # Package alias symbolic link
 ├── qvitiligo/
 │   ├── __init__.py                     # Package metadata and version definition
 │   ├── chemoinformatics.py             # RDKit molecular descriptors & ADMET scoring
