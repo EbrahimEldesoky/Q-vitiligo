@@ -1,4 +1,4 @@
-# QuantumVitiligo
+# Q-vitiligo
 
 ## Quantum-Augmented Phytopharmacological Optimization Engine for Autoimmune Vitiligo
 
