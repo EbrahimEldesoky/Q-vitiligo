@@ -1,0 +1,376 @@
+{
+  "pipeline": "QuantumVitiligo",
+  "version": "1.0.0",
+  "stages": {
+    "data_loading": {
+      "targets": 5,
+      "compounds": 10
+    },
+    "admet_prescreening": {
+      "oral_viable": [
+        "PIP-01",
+        "BAI-02",
+        "GIN-03",
+        "BAK-04",
+        "THY-05",
+        "QUE-06",
+        "API-08",
+        "RES-09",
+        "LUT-10"
+      ],
+      "all_passed_to_quantum": [
+        "PIP-01",
+        "BAI-02",
+        "GIN-03",
+        "BAK-04",
+        "THY-05",
+        "QUE-06",
+        "CUR-07",
+        "API-08",
+        "RES-09",
+        "LUT-10"
+      ]
+    },
+    "quantum_vqe": {
+      "total_pairs": 23,
+      "backend": "aer",
+      "num_qubits": 4,
+      "results": {
+        "PIP-01": {
+          "MC1R": {
+            "binding_energy_kcal": -3683.756,
+            "converged": false,
+            "iterations": 150
+          },
+          "TYR": {
+            "binding_energy_kcal": -3570.406,
+            "converged": false,
+            "iterations": 150
+          }
+        },
+        "BAI-02": {
+          "JAK1": {
+            "binding_energy_kcal": -4113.733,
+            "converged": false,
+            "iterations": 150
+          },
+          "JAK2": {
+            "binding_energy_kcal": -3907.112,
+            "converged": false,
+            "iterations": 150
+          },
+          "Nrf2_KEAP1": {
+            "binding_energy_kcal": -3548.152,
+            "converged": false,
+            "iterations": 150
+          }
+        },
+        "GIN-03": {
+          "JAK1": {
+            "binding_energy_kcal": -4511.593,
+            "converged": false,
+            "iterations": 150
+          },
+          "Nrf2_KEAP1": {
+            "binding_energy_kcal": -4137.619,
+            "converged": false,
+            "iterations": 150
+          }
+        },
+        "BAK-04": {
+          "MC1R": {
+            "binding_energy_kcal": -3244.983,
+            "converged": false,
+            "iterations": 150
+          },
+          "TYR": {
+            "binding_energy_kcal": -3123.644,
+            "converged": false,
+            "iterations": 150
+          }
+        },
+        "THY-05": {
+          "JAK1": {
+            "binding_energy_kcal": -3398.256,
+            "converged": false,
+            "iterations": 150
+          },
+          "MC1R": {
+            "binding_energy_kcal": -2863.476,
+            "converged": false,
+            "iterations": 150
+          },
+          "Nrf2_KEAP1": {
+            "binding_energy_kcal": -2908.282,
+            "converged": false,
+            "iterations": 150
+          }
+        },
+        "QUE-06": {
+          "Nrf2_KEAP1": {
+            "binding_energy_kcal": -3637.451,
+            "converged": false,
+            "iterations": 150
+          },
+          "JAK2": {
+            "binding_energy_kcal": -3931.165,
+            "converged": false,
+            "iterations": 150
+          }
+        },
+        "CUR-07": {
+          "JAK1": {
+            "binding_energy_kcal": -4481.157,
+            "converged": false,
+            "iterations": 150
+          },
+          "JAK2": {
+            "binding_energy_kcal": -4237.805,
+            "converged": false,
+            "iterations": 150
+          },
+          "Nrf2_KEAP1": {
+            "binding_energy_kcal": -4094.912,
+            "converged": false,
+            "iterations": 150
+          }
+        },
+        "API-08": {
+          "JAK2": {
+            "binding_energy_kcal": -3907.112,
+            "converged": false,
+            "iterations": 150
+          },
+          "Nrf2_KEAP1": {
+            "binding_energy_kcal": -3548.152,
+            "converged": false,
+            "iterations": 150
+          }
+        },
+        "RES-09": {
+          "Nrf2_KEAP1": {
+            "binding_energy_kcal": -3302.052,
+            "converged": false,
+            "iterations": 150
+          },
+          "JAK1": {
+            "binding_energy_kcal": -3583.37,
+            "converged": false,
+            "iterations": 150
+          }
+        },
+        "LUT-10": {
+          "JAK1": {
+            "binding_energy_kcal": -4224.679,
+            "converged": false,
+            "iterations": 150
+          },
+          "JAK2": {
+            "binding_energy_kcal": -4015.396,
+            "converged": false,
+            "iterations": 150
+          }
+        }
+      }
+    },
+    "synergy_optimization": {
+      "generations_run": 10,
+      "converged": false,
+      "best_fitness": 0.837496,
+      "wall_time_s": 0.08,
+      "delivery_route": "Oral (capsule/tablet)",
+      "target_coverage": {
+        "JAK1": 1.0,
+        "JAK2": 1.0,
+        "MC1R": 1.0,
+        "TYR": 1.0,
+        "Nrf2_KEAP1": 1.0
+      }
+    }
+  },
+  "formulation": {
+    "formulation_name": "QuantumVitiligo Formulation v1.0",
+    "therapeutic_indication": "Vitiligo (Non-segmental) — Autoimmune arrest + Repigmentation",
+    "delivery_route": "Oral (capsule/tablet)",
+    "fitness_score": 0.837496,
+    "fitness_breakdown": {
+      "immune_arrest": 2.0124,
+      "repigmentation": 0.7319,
+      "cellular_defense": 0.4644,
+      "admet": 0.9827,
+      "synergy": 1.0,
+      "toxicity_penalty": 0.0
+    },
+    "target_coverage": {
+      "JAK1": 1.0,
+      "JAK2": 1.0,
+      "MC1R": 1.0,
+      "TYR": 1.0,
+      "Nrf2_KEAP1": 1.0
+    },
+    "total_mg_per_dose": 73.91,
+    "ingredients": [
+      {
+        "compound_id": "BAI-02",
+        "name": "Baicalein",
+        "plant_source": "Scutellaria baicalensis (Chinese skullcap)",
+        "concentration_uM": 104.19,
+        "mg_per_dose": 14.07,
+        "primary_action": "autoimmune_arrest",
+        "targets": [
+          "JAK1",
+          "JAK2",
+          "Nrf2_KEAP1"
+        ],
+        "mechanism": "Potent natural JAK1/STAT3 and 12-lipoxygenase inhibitor; suppresses IFN-gamma induced CXCL10 expression in keratinocytes and melanocytes",
+        "bioavailability": 0.5354,
+        "percentage_of_formula": 19.0
+      },
+      {
+        "compound_id": "QUE-06",
+        "name": "Quercetin",
+        "plant_source": "Ginkgo biloba & Sophora japonica",
+        "concentration_uM": 75.01,
+        "mg_per_dose": 11.33,
+        "primary_action": "cellular_defense",
+        "targets": [
+          "Nrf2_KEAP1",
+          "JAK2"
+        ],
+        "mechanism": "Protects against hydrogen peroxide (H2O2)-induced melanocyte apoptosis, activates Nrf2/HO-1 cascade and suppresses CXCL10",
+        "bioavailability": 0.317,
+        "percentage_of_formula": 15.3
+      },
+      {
+        "compound_id": "PIP-01",
+        "name": "Piperine",
+        "plant_source": "Piper nigrum (Black pepper)",
+        "concentration_uM": 75.0,
+        "mg_per_dose": 10.69,
+        "primary_action": "repigmentation",
+        "targets": [
+          "MC1R",
+          "TYR"
+        ],
+        "mechanism": "Stimulates melanocyte proliferation and morphological dendrite extension; increases bioavailability of co-administered polyphenols",
+        "bioavailability": 0.7815,
+        "percentage_of_formula": 14.5
+      },
+      {
+        "compound_id": "API-08",
+        "name": "Apigenin",
+        "plant_source": "Matricaria chamomilla (Chamomile) & Petroselinum crispum",
+        "concentration_uM": 58.34,
+        "mg_per_dose": 7.88,
+        "primary_action": "autoimmune_arrest",
+        "targets": [
+          "JAK2",
+          "Nrf2_KEAP1"
+        ],
+        "mechanism": "Selectively inhibits JAK2/STAT1 cascade and restores regulatory T-cell (Treg) balance in autoimmune skin conditions",
+        "bioavailability": 0.5354,
+        "percentage_of_formula": 10.7
+      },
+      {
+        "compound_id": "THY-05",
+        "name": "Thymoquinone",
+        "plant_source": "Nigella sativa (Black seed)",
+        "concentration_uM": 51.85,
+        "mg_per_dose": 4.25,
+        "primary_action": "dual_action",
+        "targets": [
+          "JAK1",
+          "MC1R",
+          "Nrf2_KEAP1"
+        ],
+        "mechanism": "Disperses melanin granules, prevents lipid peroxidation in melanocyte membranes, modulates CD4+/CD8+ T-cell ratios",
+        "bioavailability": 0.8934,
+        "percentage_of_formula": 5.8
+      },
+      {
+        "compound_id": "CUR-07",
+        "name": "Curcumin",
+        "plant_source": "Curcuma longa (Turmeric)",
+        "concentration_uM": 42.25,
+        "mg_per_dose": 7.78,
+        "primary_action": "autoimmune_arrest",
+        "targets": [
+          "JAK1",
+          "JAK2",
+          "Nrf2_KEAP1"
+        ],
+        "mechanism": "Directly downregulates STAT1/STAT3 phosphorylation; prevents IFN-gamma signaling and mitigates ER stress in melanocytes",
+        "bioavailability": 0.2851,
+        "percentage_of_formula": 10.5
+      },
+      {
+        "compound_id": "GIN-03",
+        "name": "Ginkgolide B",
+        "plant_source": "Ginkgo biloba",
+        "concentration_uM": 37.91,
+        "mg_per_dose": 6.71,
+        "primary_action": "autoimmune_arrest",
+        "targets": [
+          "JAK1",
+          "Nrf2_KEAP1"
+        ],
+        "mechanism": "Arrests active vitiligo progression in clinical randomized trials; PAF antagonist and antioxidant; reduces cytotoxic T-cell infiltrates",
+        "bioavailability": 0.479,
+        "percentage_of_formula": 9.1
+      },
+      {
+        "compound_id": "RES-09",
+        "name": "Resveratrol",
+        "plant_source": "Polygonum cuspidatum & Vitis vinifera",
+        "concentration_uM": 35.6,
+        "mg_per_dose": 4.06,
+        "primary_action": "cellular_defense",
+        "targets": [
+          "Nrf2_KEAP1",
+          "JAK1"
+        ],
+        "mechanism": "SIRT1 activator; rescues stressed melanocytes from oxidative death, downregulates autoimmune autoantigen presentation",
+        "bioavailability": 0.6238,
+        "percentage_of_formula": 5.5
+      },
+      {
+        "compound_id": "BAK-04",
+        "name": "Bakuchiol",
+        "plant_source": "Psoralea corylifolia (Babchi)",
+        "concentration_uM": 27.78,
+        "mg_per_dose": 3.17,
+        "primary_action": "repigmentation",
+        "targets": [
+          "MC1R",
+          "TYR"
+        ],
+        "mechanism": "Non-phototoxic meroterpene from Babchi; stimulates MITF and tyrosinase without the severe phototoxicity/mutagenicity of classic psoralens",
+        "bioavailability": 0.567,
+        "percentage_of_formula": 4.3
+      },
+      {
+        "compound_id": "LUT-10",
+        "name": "Luteolin",
+        "plant_source": "Lonicera japonica & Thymus vulgaris",
+        "concentration_uM": 27.73,
+        "mg_per_dose": 3.97,
+        "primary_action": "autoimmune_arrest",
+        "targets": [
+          "JAK1",
+          "JAK2"
+        ],
+        "mechanism": "Inhibits IFN-gamma induced JAK-STAT1/3 phosphorylation, dampens chemokine secretion in epidermal microenvironment",
+        "bioavailability": 0.4353,
+        "percentage_of_formula": 5.4
+      }
+    ],
+    "timestamp": "2026-09-07T20:07:00.442960+00:00",
+    "notes": [
+      "Concentrations are theoretical and require in-vitro validation.",
+      "Piperine is included as a bioavailability enhancer for co-formulated polyphenols.",
+      "This formulation is designed for systemic delivery (oral or injectable).",
+      "All compounds are derived from natural plant sources with established safety profiles."
+    ]
+  },
+  "total_wall_time_s": 18.78
+}

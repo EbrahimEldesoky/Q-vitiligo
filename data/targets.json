@@ -1,0 +1,64 @@
+{
+  "targets": [
+    {
+      "id": "JAK1",
+      "name": "Janus Kinase 1",
+      "gene": "JAK1",
+      "uniprot": "P23458",
+      "pdb_id": "6BBU",
+      "role": "autoimmune_arrest",
+      "pathway": "IFN-gamma / CXCL10 / JAK-STAT3",
+      "mechanism": "Inhibition prevents CD8+ cytotoxic T-cell recruitment and killing of epidermal melanocytes",
+      "active_site_residues": ["LEU881", "GLU957", "LEU959", "GLY962", "VAL889"],
+      "binding_weight": 0.35
+    },
+    {
+      "id": "JAK2",
+      "name": "Janus Kinase 2",
+      "gene": "JAK2",
+      "uniprot": "O60674",
+      "pdb_id": "4IVA",
+      "role": "autoimmune_arrest",
+      "pathway": "IFN-gamma / JAK2-STAT1 signaling",
+      "mechanism": "Synergistic inhibition with JAK1 halts autoimmune depigmentation cascade",
+      "active_site_residues": ["LEU932", "GLU930", "MET929", "LEU855"],
+      "binding_weight": 0.20
+    },
+    {
+      "id": "MC1R",
+      "name": "Melanocortin 1 Receptor",
+      "gene": "MC1R",
+      "uniprot": "Q01726",
+      "pdb_id": "7F4D",
+      "role": "repigmentation",
+      "pathway": "cAMP / PKA / CREB / MITF",
+      "mechanism": "Agonism/stimulation drives melanocyte stem cell (McSC) differentiation and melanin synthesis",
+      "active_site_residues": ["ASP117", "ASP121", "PHE257", "TYR298"],
+      "binding_weight": 0.25
+    },
+    {
+      "id": "TYR",
+      "name": "Tyrosinase",
+      "gene": "TYR",
+      "uniprot": "P14679",
+      "pdb_id": "5M8N",
+      "role": "repigmentation",
+      "pathway": "Melanogenesis (L-DOPA to Dopaquinone)",
+      "mechanism": "Cofactor activation/stabilization accelerates pigment production in recovered melanocytes",
+      "active_site_residues": ["HIS180", "HIS208", "HIS211", "HIS363", "HIS367"],
+      "binding_weight": 0.10
+    },
+    {
+      "id": "Nrf2_KEAP1",
+      "name": "Nuclear factor erythroid 2-related factor 2 / KEAP1",
+      "gene": "NFE2L2",
+      "uniprot": "Q16236",
+      "pdb_id": "4XMB",
+      "role": "cellular_defense",
+      "pathway": "Antioxidant Response Element (ARE)",
+      "mechanism": "Activating Nrf2 neutralizes reactive oxygen species (H2O2) that trigger autoimmune vitiligo flares",
+      "active_site_residues": ["ARG415", "TYR334", "SER602", "GLY364"],
+      "binding_weight": 0.10
+    }
+  ]
+}

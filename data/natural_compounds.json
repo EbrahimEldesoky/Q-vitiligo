@@ -1,0 +1,124 @@
+{
+  "compounds": [
+    {
+      "id": "PIP-01",
+      "name": "Piperine",
+      "plant_source": "Piper nigrum (Black pepper)",
+      "smiles": "C1CCN(CC1)C(=O)/C=C/C=C/C2=CC3=C(C=C2)OCO3",
+      "primary_action": "repigmentation",
+      "known_mechanism": "Stimulates melanocyte proliferation and morphological dendrite extension; increases bioavailability of co-administered polyphenols",
+      "targets": ["MC1R", "TYR"],
+      "oral_absorption_tier": "High",
+      "safety_profile": "GRAS (Generally Recognized As Safe)",
+      "target_concentration_range_uM": [5.0, 50.0]
+    },
+    {
+      "id": "BAI-02",
+      "name": "Baicalein",
+      "plant_source": "Scutellaria baicalensis (Chinese skullcap)",
+      "smiles": "C1=CC=C(C=C1)C2=CC(=O)C3=C(C=C(C(=C3O2)O)O)O",
+      "primary_action": "autoimmune_arrest",
+      "known_mechanism": "Potent natural JAK1/STAT3 and 12-lipoxygenase inhibitor; suppresses IFN-gamma induced CXCL10 expression in keratinocytes and melanocytes",
+      "targets": ["JAK1", "JAK2", "Nrf2_KEAP1"],
+      "oral_absorption_tier": "Moderate",
+      "safety_profile": "High safety margin, extensively used in traditional medicine",
+      "target_concentration_range_uM": [10.0, 100.0]
+    },
+    {
+      "id": "GIN-03",
+      "name": "Ginkgolide B",
+      "plant_source": "Ginkgo biloba",
+      "smiles": "CC(C)(C)C12CC3C(C(=O)O3)C45C1C(=O)OC5C(C(O2)(C4(C)O)O)O",
+      "primary_action": "autoimmune_arrest",
+      "known_mechanism": "Arrests active vitiligo progression in clinical randomized trials; PAF antagonist and antioxidant; reduces cytotoxic T-cell infiltrates",
+      "targets": ["JAK1", "Nrf2_KEAP1"],
+      "oral_absorption_tier": "High",
+      "safety_profile": "Clinically proven oral tolerability",
+      "target_concentration_range_uM": [2.0, 40.0]
+    },
+    {
+      "id": "BAK-04",
+      "name": "Bakuchiol",
+      "plant_source": "Psoralea corylifolia (Babchi)",
+      "smiles": "CC(=CCC/C(=C/C1=CC=C(C=C1)O)/C)C=C",
+      "primary_action": "repigmentation",
+      "known_mechanism": "Non-phototoxic meroterpene from Babchi; stimulates MITF and tyrosinase without the severe phototoxicity/mutagenicity of classic psoralens",
+      "targets": ["MC1R", "TYR"],
+      "oral_absorption_tier": "Moderate",
+      "safety_profile": "Safe alternative to traditional psoralen",
+      "target_concentration_range_uM": [1.0, 25.0]
+    },
+    {
+      "id": "THY-05",
+      "name": "Thymoquinone",
+      "plant_source": "Nigella sativa (Black seed)",
+      "smiles": "CC1=CC(=O)C(=CC1=O)C(C)C",
+      "primary_action": "dual_action",
+      "known_mechanism": "Disperses melanin granules, prevents lipid peroxidation in melanocyte membranes, modulates CD4+/CD8+ T-cell ratios",
+      "targets": ["JAK1", "MC1R", "Nrf2_KEAP1"],
+      "oral_absorption_tier": "High",
+      "safety_profile": "Low toxicity, excellent oral and parenteral profile",
+      "target_concentration_range_uM": [5.0, 50.0]
+    },
+    {
+      "id": "QUE-06",
+      "name": "Quercetin",
+      "plant_source": "Ginkgo biloba & Sophora japonica",
+      "smiles": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+      "primary_action": "cellular_defense",
+      "known_mechanism": "Protects against hydrogen peroxide (H2O2)-induced melanocyte apoptosis, activates Nrf2/HO-1 cascade and suppresses CXCL10",
+      "targets": ["Nrf2_KEAP1", "JAK2"],
+      "oral_absorption_tier": "Moderate (Enhanced by Piperine)",
+      "safety_profile": "High safety, widespread dietary flavonoid",
+      "target_concentration_range_uM": [10.0, 80.0]
+    },
+    {
+      "id": "CUR-07",
+      "name": "Curcumin",
+      "plant_source": "Curcuma longa (Turmeric)",
+      "smiles": "COC1=C(C=CC(=C1)/C=C/C(=O)CC(=O)/C=C/C2=CC(=C(C=C2)O)OC)O",
+      "primary_action": "autoimmune_arrest",
+      "known_mechanism": "Directly downregulates STAT1/STAT3 phosphorylation; prevents IFN-gamma signaling and mitigates ER stress in melanocytes",
+      "targets": ["JAK1", "JAK2", "Nrf2_KEAP1"],
+      "oral_absorption_tier": "Low (Requires formulation/Piperine)",
+      "safety_profile": "Excellent safety up to high oral doses",
+      "target_concentration_range_uM": [5.0, 60.0]
+    },
+    {
+      "id": "API-08",
+      "name": "Apigenin",
+      "plant_source": "Matricaria chamomilla (Chamomile) & Petroselinum crispum",
+      "smiles": "C1=CC(=CC=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+      "primary_action": "autoimmune_arrest",
+      "known_mechanism": "Selectively inhibits JAK2/STAT1 cascade and restores regulatory T-cell (Treg) balance in autoimmune skin conditions",
+      "targets": ["JAK2", "Nrf2_KEAP1"],
+      "oral_absorption_tier": "Moderate",
+      "safety_profile": "Non-toxic dietary flavone",
+      "target_concentration_range_uM": [10.0, 75.0]
+    },
+    {
+      "id": "RES-09",
+      "name": "Resveratrol",
+      "plant_source": "Polygonum cuspidatum & Vitis vinifera",
+      "smiles": "C1=CC(=CC=C1/C=C/C2=CC(=CC(=C2)O)O)O",
+      "primary_action": "cellular_defense",
+      "known_mechanism": "SIRT1 activator; rescues stressed melanocytes from oxidative death, downregulates autoimmune autoantigen presentation",
+      "targets": ["Nrf2_KEAP1", "JAK1"],
+      "oral_absorption_tier": "Moderate",
+      "safety_profile": "Well tolerated",
+      "target_concentration_range_uM": [5.0, 50.0]
+    },
+    {
+      "id": "LUT-10",
+      "name": "Luteolin",
+      "plant_source": "Lonicera japonica & Thymus vulgaris",
+      "smiles": "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+      "primary_action": "autoimmune_arrest",
+      "known_mechanism": "Inhibits IFN-gamma induced JAK-STAT1/3 phosphorylation, dampens chemokine secretion in epidermal microenvironment",
+      "targets": ["JAK1", "JAK2"],
+      "oral_absorption_tier": "Moderate",
+      "safety_profile": "High safety margin",
+      "target_concentration_range_uM": [5.0, 40.0]
+    }
+  ]
+}
